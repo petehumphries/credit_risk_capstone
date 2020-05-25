@@ -14,28 +14,22 @@ A loans dataset containing customer loans information from Lending Club for 2007
 
 There are many versions of the Lending CLub Dataset but went with the original:
 
-        Lending Club Loans Dataset #1 https://www.kaggle.com/wendykan/lending-club-loan-data/version/1?
-        For NATIONAL UNEMPLOYMENT do follow: https://www.macrotrends.net/1316/us-national-unemployment-rate
-        For RETAIL SALES do follow:https://www.macrotrends.net/1371/retail-sales-historical-chart
-        For TED SPREAD do follow: https://www.macrotrends.net/1447/ted-spread-historical-chart
-        For VIX do follow: https://www.macrotrends.net/2603/vix-volatility-index-historical-chart
+* Lending Club Loans Dataset #1 https://www.kaggle.com/wendykan/lending-club-loan-data/version/1?
+* For NATIONAL UNEMPLOYMENT do follow: https://www.macrotrends.net/1316/us-national-unemployment-rate
+* For RETAIL SALES do follow:https://www.macrotrends.net/1371/retail-sales-historical-chart
+* For TED SPREAD do follow: https://www.macrotrends.net/1447/ted-spread-historical-chart
+* For VIX do follow: https://www.macrotrends.net/2603/vix-volatility-index-historical-chart
 
-To estimate Probability of Default a Logistic Regression with 25 inputs was used to categorise obligors into good borrowers and bad borrowers.  Features were split into similar classes and features with poor explanatory power were dropped in a feature selection prior to running the baseline model generating an ROC of 69.41%.  Further runs of the model with fewer inputs look promising as it appears that simple is better for PD models.
+o estimate Probability of Default a Logistic Regression with 25 inputs was used to categorise obligors into good borrowers and bad borrowers. Features were split into similar classes and features with poor explanatory power were dropped in a feature selection prior to running the baseline model generating an AUROC of 70.29%. Further runs of the model with fewer inputs look promising as it appears that simple is better for PD models.
 
-For the LGD modeling accuracy was 0.60823 and for EAD it was 0.6679 which is encouraging.
+For the LGD modeling accuracy is 0.6083 with AUROC 66.78% and mean Exposure at Default is 73.16%.
 
-Being able to accurately identify good borrowers and bad borrowers enable bank to match good borrowers with loans. Capital is finite so lending to bad borrowers can shut good borrowers out.
-
-With full model we now allocate customers credit scores and discriminate between good borrowers and bad borrowers. 
-
-The goal of this project was to create a `regression/classification` model that was able to predict `what you set out to do`.
-
+The average Expected Loss on loans in the dataset is 5.6129%.
 
 
 ### Visualizations
 
 ![WoE by state](https://github.com/petehumphries/flatiron_capstone_final/blob/master/images/WoE_by_state.JPG)
-
 ![WoE by income](https://github.com/petehumphries/flatiron_capstone_final/blob/master/images/WoE_by_income.JPG)
 ![WoE by interest_rate](https://github.com/petehumphries/flatiron_capstone_final/blob/master/images/WoE_by_interest_rate.JPG)
 ![WoE by payment_to_income](https://github.com/petehumphries/flatiron_capstone_final/blob/master/images/WoE_by_payment_to_income_factor.JPG)
