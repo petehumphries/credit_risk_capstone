@@ -28,9 +28,11 @@ The average Expected Loss on loans in the dataset is 5.6129%.
 
 The most important files in the repo are:
 
-  * notebooks/credit_risk_modeling_03_modeling.ipynb - main notebook for modelling and insights
-  * notebooks/credit_risk_modeling_02_preparation.ipynb - main notebook for fine classing of variables 
-  * data - folder containing all data sources, raw and cleaned
+ * notebooks/credit_risk_modeling_02_preparation.ipynb - main notebook for fine classing of variables 
+ * notebooks/credit_risk_modeling_03_modeling.ipynb - main notebook for modelling and insights
+ * notebook/credit_risk_modeling_04_ead_lgd_modeling.ipynb - where the results are brought together  
+ * data - folder containing all data sources, raw and cleaned
+  
 
 ## Future Work
 
