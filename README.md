@@ -32,8 +32,13 @@ The most important files in the repo are:
   * notebooks/credit_risk_modeling_02_preparation.ipynb - main notebook for fine classing of variables 
   * data - folder containing all data sources, raw and cleaned
 
+## Future Work
 
-last bit: could you add the "Future improvements" section to your readme as well? You had them in your presentation so it should be a straightforward copy and paste. Just add them at the end of the readme and they'll nicely finish it
+* Comparison with the 2015 Lending Club dataset (430K+ new loans)
+* Consider alternate models and methodologies for EAD and LGD estimates
+* Consider other statistical packages: LGD would be suited to R
+* Consider other classification approaches for PD
+* Consider use of AWS for more computationally expensive techniques
 
 ### Visualizations
 
