@@ -20,12 +20,20 @@ There are many versions of the Lending CLub Dataset but went with the original:
 * For TED SPREAD do follow: https://www.macrotrends.net/1447/ted-spread-historical-chart
 * For VIX do follow: https://www.macrotrends.net/2603/vix-volatility-index-historical-chart
 
-o estimate Probability of Default a Logistic Regression with 25 inputs was used to categorise obligors into good borrowers and bad borrowers. Features were split into similar classes and features with poor explanatory power were dropped in a feature selection prior to running the baseline model generating an AUROC of 70.29%. Further runs of the model with fewer inputs look promising as it appears that simple is better for PD models.
+TIn order to estimate Probability of Default a Logistic Regression with 25 inputs was used to categorise obligors into good borrowers and bad borrowers. Features were split into similar classes and features with poor explanatory power were dropped in a feature selection prior to running the baseline model generating an AUROC of 70.29%. Further runs of the model with fewer inputs look promising as it appears that simple is better for PD models.
 
 For the LGD modeling accuracy is 0.6083 with AUROC 66.78% and mean Exposure at Default is 73.16%.
 
 The average Expected Loss on loans in the dataset is 5.6129%.
 
+The most important files in the repo are:
+
+  * notebooks/credit_risk_modeling_03_modeling.ipynb - main notebook for modelling and insights
+  * notebooks/credit_risk_modeling_02_preparation.ipynb - main notebook for fine classing of variables 
+  * data - folder containing all data sources, raw and cleaned
+
+
+last bit: could you add the "Future improvements" section to your readme as well? You had them in your presentation so it should be a straightforward copy and paste. Just add them at the end of the readme and they'll nicely finish it
 
 ### Visualizations
 
